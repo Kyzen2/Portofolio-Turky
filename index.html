@@ -1,676 +1,517 @@
 <!DOCTYPE html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portofolio [Nama Anda] | [Profesi Anda]</title>
-    <meta
-      name="description"
-      content="Portofolio profesional [Nama Anda], seorang [Profesi Anda] dengan pengalaman di [Bidang Anda]."
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
+    <meta name="description" content="Portofolio profesional [Nama Anda], seorang [Profesi Anda] dengan pengalaman di [Bidang Anda].">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
     <!-- Loading Screen -->
     <div class="loading-screen">
-      <div class="spinner"></div>
+        <div class="spinner"></div>
     </div>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top" aria-label="Kembali ke atas">
-      <i class="fas fa-arrow-up"></i>
+        <i class="fas fa-arrow-up"></i>
     </button>
 
     <!-- Header -->
-    <!-- Di dalam <header> -->
     <header>
-      <nav>
-        <div class="logo">Nama Anda</div>
-        <ul class="nav-links">
-          <li>
-            <a href="#tentang-saya"><i class="fas fa-user"></i> Tentang Saya</a>
-          </li>
-          <li>
-            <a href="#portofolio"
-              ><i class="fas fa-briefcase"></i> Portofolio</a
-            >
-          </li>
-          <li>
-            <a href="#keahlian"><i class="fas fa-code"></i> Keahlian</a>
-          </li>
-          <li>
-            <a href="#testimoni"><i class="fas fa-quote-left"></i> Testimoni</a>
-          </li>
-          <li>
-            <a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a>
-          </li>
-        </ul>
-        <div class="burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
+        <nav>
+            <div class="logo animate__animated animate__fadeIn">Nama Anda</div>
+            <ul class="nav-links">
+                <li><a href="#tentang-saya"><i class="fas fa-user"></i> Tentang Saya</a></li>
+                <li><a href="#portofolio"><i class="fas fa-briefcase"></i> Portofolio</a></li>
+                <li><a href="#keahlian"><i class="fas fa-code"></i> Keahlian</a></li>
+                <li><a href="#testimoni"><i class="fas fa-quote-left"></i> Testimoni</a></li>
+                <li><a href="#kontak"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
     </header>
 
     <!-- Bagian Utama -->
     <main>
-      <!-- Hero Section -->
-      <section id="hero" class="hero-section">
-        <div class="hero-content animate__animated animate__fadeInLeft">
-          <h1>Halo, Saya <span class="highlight">[Nama Anda]</span></h1>
-          <p class="typing-text">Seorang <span id="typing"></span></p>
-          <div class="hero-buttons">
-            <a href="#portofolio" class="cta-button primary"
-              >Lihat Portofolio</a
-            >
-            <a href="#kontak" class="cta-button secondary">Hubungi Saya</a>
-          </div>
-          <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
-          </div>
-        </div>
-        <div class="hero-image animate__animated animate__fadeInRight">
-          <div class="image-container">
-            <img
-              src="assets/images/hero-image.jpg"
-              alt="[Nama Anda]"
-              class="main-image"
-            />
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Tentang Saya -->
-      <section id="tentang-saya" class="section">
-        <div class="section-header">
-          <h2 class="section-title">
-            Tentang <span class="highlight">Saya</span>
-          </h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">Mari berkenalan lebih dekat</p>
-        </div>
-        <div class="tentang-saya-content">
-          <div class="tentang-saya-image">
-            <img
-              src="assets/images/tentang-saya.jpg"
-              alt="Tentang Saya"
-              class="profile-image"
-            />
-          </div>
-          <div class="tentang-saya-text">
-            <h3>Siapa Saya?</h3>
-            <p>
-              Saya adalah seorang profesional di bidang [bidang Anda] dengan
-              pengalaman lebih dari [X] tahun. Saya memiliki passion untuk
-              menciptakan solusi digital yang inovatif dan berdampak.
-            </p>
-
-            <div class="info-boxes">
-              <div class="info-box">
-                <i class="fas fa-briefcase"></i>
-                <div>
-                  <h4>Pengalaman</h4>
-                  <p>[X] Tahun</p>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content animate__animated animate__fadeInLeft">
+                <h1>Halo, Saya <span class="highlight">[Nama Anda]</span></h1>
+                <p class="typing-text">Seorang <span id="typing"></span></p>
+                <div class="hero-buttons">
+                    <a href="#portofolio" class="cta-button primary">Lihat Portofolio</a>
+                    <a href="#kontak" class="cta-button secondary">Hubungi Saya</a>
                 </div>
-              </div>
-              <div class="info-box">
-                <i class="fas fa-project-diagram"></i>
-                <div>
-                  <h4>Proyek</h4>
-                  <p>[XX]+ Selesai</p>
+                <div class="social-links">
+                    <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-behance"></i></a>
                 </div>
-              </div>
-              <div class="info-box">
-                <i class="fas fa-award"></i>
-                <div>
-                  <h4>Sertifikasi</h4>
-                  <p>[X] Profesional</p>
+            </div>
+            <div class="hero-image animate__animated animate__fadeInRight">
+                <div class="image-container">
+                    <img src="assets/images/hero-image.jpg" alt="[Nama Anda]" class="main-image">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
                 </div>
-              </div>
             </div>
+        </section>
 
-            <div class="personal-info">
-              <div>
-                <p><span>Nama:</span> [Nama Lengkap]</p>
-                <p><span>Email:</span> email@contoh.com</p>
-              </div>
-              <div>
-                <p><span>Umur:</span> [XX] Tahun</p>
-                <p><span>Dari:</span> Kota, Negara</p>
-              </div>
+        <!-- Tentang Saya -->
+        <section id="tentang-saya" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Tentang <span class="highlight">Saya</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Mari berkenalan lebih dekat</p>
             </div>
-
-            <a href="#" class="download-cv"
-              >Unduh CV <i class="fas fa-download"></i
-            ></a>
-          </div>
-        </div>
-      </section>
-
-      <!-- Keahlian -->
-      <section id="keahlian" class="section bg-light">
-        <div class="section-header">
-          <h2 class="section-title">
-            Keahlian <span class="highlight">Saya</span>
-          </h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">Kemampuan dan keahlian profesional</p>
-        </div>
-        <div class="keahlian-container">
-          <div class="keahlian-item">
-            <div class="skill-icon">
-              <i class="fab fa-html5"></i>
-            </div>
-            <h3>HTML5</h3>
-            <div class="keahlian-bar">
-              <div class="keahlian-level" data-level="95"></div>
-              <span class="skill-percent">95%</span>
-            </div>
-            <p>
-              Pengalaman luas dalam membuat struktur website yang semantik dan
-              mudah diakses.
-            </p>
-          </div>
-          <div class="keahlian-item">
-            <div class="skill-icon">
-              <i class="fab fa-css3-alt"></i>
-            </div>
-            <h3>CSS3</h3>
-            <div class="keahlian-bar">
-              <div class="keahlian-level" data-level="90"></div>
-              <span class="skill-percent">90%</span>
-            </div>
-            <p>
-              Kemampuan mendesain tampilan website yang responsif dan menarik
-              dengan CSS3.
-            </p>
-          </div>
-          <div class="keahlian-item">
-            <div class="skill-icon">
-              <i class="fab fa-js"></i>
-            </div>
-            <h3>JavaScript</h3>
-            <div class="keahlian-bar">
-              <div class="keahlian-level" data-level="85"></div>
-              <span class="skill-percent">85%</span>
-            </div>
-            <p>
-              Pengalaman dalam menambahkan interaktivitas dan fungsionalitas
-              dinamis ke website.
-            </p>
-          </div>
-          <div class="keahlian-item">
-            <div class="skill-icon">
-              <i class="fab fa-react"></i>
-            </div>
-            <h3>React</h3>
-            <div class="keahlian-bar">
-              <div class="keahlian-level" data-level="80"></div>
-              <span class="skill-percent">80%</span>
-            </div>
-            <p>
-              Pengembangan aplikasi web modern dengan React.js dan ekosistemnya.
-            </p>
-          </div>
-          <div class="keahlian-item">
-            <div class="skill-icon">
-              <i class="fab fa-node-js"></i>
-            </div>
-            <h3>Node.js</h3>
-            <div class="keahlian-bar">
-              <div class="keahlian-level" data-level="75"></div>
-              <span class="skill-percent">75%</span>
-            </div>
-            <p>Membangun aplikasi server-side yang skalabel dengan Node.js.</p>
-          </div>
-          <div class="keahlian-item">
-            <div class="skill-icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <h3>Database</h3>
-            <div class="keahlian-bar">
-              <div class="keahlian-level" data-level="85"></div>
-              <span class="skill-percent">85%</span>
-            </div>
-            <p>
-              Pengalaman dengan MySQL, MongoDB, dan sistem database lainnya.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Portofolio -->
-      <section id="portofolio" class="section">
-        <div class="section-header">
-          <h2 class="section-title">
-            Portofolio <span class="highlight">Saya</span>
-          </h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">Karya terbaik yang telah saya buat</p>
-        </div>
-
-        <div class="portfolio-filter">
-          <button class="filter-btn active" data-filter="all">Semua</button>
-          <button class="filter-btn" data-filter="web">Website</button>
-          <button class="filter-btn" data-filter="app">Aplikasi</button>
-          <button class="filter-btn" data-filter="design">Desain</button>
-        </div>
-
-        <div class="portfolio-grid">
-          <div class="portfolio-item" data-category="web">
-            <img src="assets/images/project1.jpg" alt="Proyek 1" />
-            <div class="portfolio-overlay">
-              <h3>Website Perusahaan</h3>
-              <p>Deskripsi singkat proyek website perusahaan yang dibuat.</p>
-              <div class="portfolio-links">
-                <a href="#" class="portfolio-link"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="#" class="portfolio-zoom"
-                  ><i class="fas fa-search-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="app">
-            <img src="assets/images/project2.jpg" alt="Proyek 2" />
-            <div class="portfolio-overlay">
-              <h3>Aplikasi Mobile</h3>
-              <p>Deskripsi singkat proyek aplikasi mobile yang dikembangkan.</p>
-              <div class="portfolio-links">
-                <a href="#" class="portfolio-link"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="#" class="portfolio-zoom"
-                  ><i class="fas fa-search-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="design">
-            <img src="assets/images/project3.jpg" alt="Proyek 3" />
-            <div class="portfolio-overlay">
-              <h3>Desain UI/UX</h3>
-              <p>Deskripsi singkat proyek desain antarmuka pengguna.</p>
-              <div class="portfolio-links">
-                <a href="#" class="portfolio-link"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="#" class="portfolio-zoom"
-                  ><i class="fas fa-search-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="web">
-            <img src="assets/images/project4.jpg" alt="Proyek 4" />
-            <div class="portfolio-overlay">
-              <h3>E-commerce</h3>
-              <p>Deskripsi singkat proyek toko online yang dibuat.</p>
-              <div class="portfolio-links">
-                <a href="#" class="portfolio-link"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="#" class="portfolio-zoom"
-                  ><i class="fas fa-search-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="app">
-            <img src="assets/images/project5.jpg" alt="Proyek 5" />
-            <div class="portfolio-overlay">
-              <h3>Aplikasi Dashboard</h3>
-              <p>Deskripsi singkat proyek aplikasi dashboard analytics.</p>
-              <div class="portfolio-links">
-                <a href="#" class="portfolio-link"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="#" class="portfolio-zoom"
-                  ><i class="fas fa-search-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-item" data-category="design">
-            <img src="assets/images/project6.jpg" alt="Proyek 6" />
-            <div class="portfolio-overlay">
-              <h3>Brand Identity</h3>
-              <p>Deskripsi singkat proyek identitas merek yang dirancang.</p>
-              <div class="portfolio-links">
-                <a href="#" class="portfolio-link"
-                  ><i class="fas fa-link"></i
-                ></a>
-                <a href="#" class="portfolio-zoom"
-                  ><i class="fas fa-search-plus"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="portfolio-more">
-          <a href="#" class="cta-button">Lihat Lebih Banyak</a>
-        </div>
-      </section>
-
-      <!-- Testimoni -->
-      <section id="testimoni" class="section bg-light">
-        <div class="section-header">
-          <h2 class="section-title">
-            Testimoni <span class="highlight">Klien</span>
-          </h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">Apa yang dikatakan klien tentang saya</p>
-        </div>
-
-        <div class="testimoni-container">
-          <div class="testimoni-slider">
-            <div class="testimoni-item active">
-              <div class="testimoni-content">
-                <i class="fas fa-quote-left quote-icon"></i>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam.
-                </p>
-                <div class="testimoni-author">
-                  <img src="assets/images/client1.jpg" alt="Klien 1" />
-                  <div>
-                    <h4>John Doe</h4>
-                    <p>CEO Perusahaan ABC</p>
-                  </div>
+            <div class="tentang-saya-content">
+                <div class="tentang-saya-image">
+                    <img src="assets/images/tentang-saya.jpg" alt="Tentang Saya" class="profile-image">
                 </div>
-              </div>
-            </div>
-            <div class="testimoni-item">
-              <div class="testimoni-content">
-                <i class="fas fa-quote-left quote-icon"></i>
-                <p>
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                  occaecat cupidatat non proident.
-                </p>
-                <div class="testimoni-author">
-                  <img src="assets/images/client2.jpg" alt="Klien 2" />
-                  <div>
-                    <h4>Jane Smith</h4>
-                    <p>Direktur XYZ Corp</p>
-                  </div>
+                <div class="tentang-saya-text">
+                    <h3>Siapa Saya?</h3>
+                    <p>Saya adalah seorang profesional di bidang [bidang Anda] dengan pengalaman lebih dari [X] tahun. Saya memiliki passion untuk menciptakan solusi digital yang inovatif dan berdampak.</p>
+                    
+                    <div class="info-boxes">
+                        <div class="info-box">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Pengalaman</h4>
+                                <p>[X] Tahun</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-project-diagram"></i>
+                            <div>
+                                <h4>Proyek</h4>
+                                <p>[XX]+ Selesai</p>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Sertifikasi</h4>
+                                <p>[X] Profesional</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="personal-info">
+                        <div>
+                            <p><span>Nama:</span> [Nama Lengkap]</p>
+                            <p><span>Email:</span> email@contoh.com</p>
+                        </div>
+                        <div>
+                            <p><span>Umur:</span> [XX] Tahun</p>
+                            <p><span>Dari:</span> Kota, Negara</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#" class="download-cv">Unduh CV <i class="fas fa-download"></i></a>
                 </div>
-              </div>
             </div>
-            <div class="testimoni-item">
-              <div class="testimoni-content">
-                <i class="fas fa-quote-left quote-icon"></i>
-                <p>
-                  Ut enim ad minima veniam, quis nostrum exercitationem ullam
-                  corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
-                  consequatur.
-                </p>
-                <div class="testimoni-author">
-                  <img src="assets/images/client3.jpg" alt="Klien 3" />
-                  <div>
-                    <h4>Robert Johnson</h4>
-                    <p>Manajer 123 Digital</p>
-                  </div>
+        </section>
+
+        <!-- Keahlian -->
+        <section id="keahlian" class="section bg-light">
+            <div class="section-header">
+                <h2 class="section-title">Keahlian <span class="highlight">Saya</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Kemampuan dan keahlian profesional</p>
+            </div>
+            <div class="keahlian-container">
+                <div class="keahlian-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <div class="keahlian-bar">
+                        <div class="keahlian-level" data-level="95"></div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <p>Pengalaman luas dalam membuat struktur website yang semantik dan mudah diakses.</p>
                 </div>
-              </div>
+                <div class="keahlian-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <div class="keahlian-bar">
+                        <div class="keahlian-level" data-level="90"></div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <p>Kemampuan mendesain tampilan website yang responsif dan menarik dengan CSS3.</p>
+                </div>
+                <div class="keahlian-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <div class="keahlian-bar">
+                        <div class="keahlian-level" data-level="85"></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <p>Pengalaman dalam menambahkan interaktivitas dan fungsionalitas dinamis ke website.</p>
+                </div>
+                <div class="keahlian-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <div class="keahlian-bar">
+                        <div class="keahlian-level" data-level="80"></div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <p>Pengembangan aplikasi web modern dengan React.js dan ekosistemnya.</p>
+                </div>
+                <div class="keahlian-item">
+                    <div class="skill-icon">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <div class="keahlian-bar">
+                        <div class="keahlian-level" data-level="75"></div>
+                        <span class="skill-percent">75%</span>
+                    </div>
+                    <p>Membangun aplikasi server-side yang skalabel dengan Node.js.</p>
+                </div>
+                <div class="keahlian-item">
+                    <div class="skill-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database</h3>
+                    <div class="keahlian-bar">
+                        <div class="keahlian-level" data-level="85"></div>
+                        <span class="skill-percent">85%</span>
+                    </div>
+                    <p>Pengalaman dengan MySQL, MongoDB, dan sistem database lainnya.</p>
+                </div>
             </div>
-          </div>
-          <div class="testimoni-controls">
-            <button class="testimoni-prev">
-              <i class="fas fa-chevron-left"></i>
-            </button>
-            <div class="testimoni-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-            <button class="testimoni-next">
-              <i class="fas fa-chevron-right"></i>
-            </button>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <!-- Blog -->
-      <section id="blog" class="section">
-        <div class="section-header">
-          <h2 class="section-title">
-            Artikel <span class="highlight">Terbaru</span>
-          </h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">Tulisan dan pemikiran terbaru saya</p>
-        </div>
+        <!-- Portofolio -->
+        <section id="portofolio" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Portofolio <span class="highlight">Saya</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Karya terbaik yang telah saya buat</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="web">Website</button>
+                <button class="filter-btn" data-filter="app">Aplikasi</button>
+                <button class="filter-btn" data-filter="design">Desain</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project1.jpg" alt="Proyek 1">
+                    <div class="portfolio-overlay">
+                        <h3>Website Perusahaan</h3>
+                        <p>Deskripsi singkat proyek website perusahaan yang dibuat.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="assets/images/project2.jpg" alt="Proyek 2">
+                    <div class="portfolio-overlay">
+                        <h3>Aplikasi Mobile</h3>
+                        <p>Deskripsi singkat proyek aplikasi mobile yang dikembangkan.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/images/project3.jpg" alt="Proyek 3">
+                    <div class="portfolio-overlay">
+                        <h3>Desain UI/UX</h3>
+                        <p>Deskripsi singkat proyek desain antarmuka pengguna.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="web">
+                    <img src="assets/images/project4.jpg" alt="Proyek 4">
+                    <div class="portfolio-overlay">
+                        <h3>E-commerce</h3>
+                        <p>Deskripsi singkat proyek toko online yang dibuat.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="app">
+                    <img src="assets/images/project5.jpg" alt="Proyek 5">
+                    <div class="portfolio-overlay">
+                        <h3>Aplikasi Dashboard</h3>
+                        <p>Deskripsi singkat proyek aplikasi dashboard analytics.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="assets/images/project6.jpg" alt="Proyek 6">
+                    <div class="portfolio-overlay">
+                        <h3>Brand Identity</h3>
+                        <p>Deskripsi singkat proyek identitas merek yang dirancang.</p>
+                        <div class="portfolio-links">
+                            <a href="#" class="portfolio-link"><i class="fas fa-link"></i></a>
+                            <a href="#" class="portfolio-zoom"><i class="fas fa-search-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="portfolio-more">
+                <a href="#" class="cta-button">Lihat Lebih Banyak</a>
+            </div>
+        </section>
 
-        <div class="blog-container">
-          <div class="blog-item">
-            <div class="blog-image">
-              <img src="assets/images/blog1.jpg" alt="Artikel 1" />
-              <div class="blog-date">15 Jun 2025</div>
+        <!-- Testimoni -->
+        <section id="testimoni" class="section bg-light">
+            <div class="section-header">
+                <h2 class="section-title">Testimoni <span class="highlight">Klien</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Apa yang dikatakan klien tentang saya</p>
             </div>
-            <div class="blog-content">
-              <h3><a href="#">Tips Meningkatkan Kinerja Website</a></h3>
-              <p>
-                Beberapa teknik praktis untuk mengoptimalkan kecepatan dan
-                kinerja website Anda.
-              </p>
-              <a href="#" class="blog-read-more"
-                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
-              ></a>
+            
+            <div class="testimoni-container">
+                <div class="testimoni-slider">
+                    <div class="testimoni-item active">
+                        <div class="testimoni-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                            <div class="testimoni-author">
+                                <img src="assets/images/client1.jpg" alt="Klien 1">
+                                <div>
+                                    <h4>John Doe</h4>
+                                    <p>CEO Perusahaan ABC</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimoni-item">
+                        <div class="testimoni-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+                            <div class="testimoni-author">
+                                <img src="assets/images/client2.jpg" alt="Klien 2">
+                                <div>
+                                    <h4>Jane Smith</h4>
+                                    <p>Direktur XYZ Corp</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimoni-item">
+                        <div class="testimoni-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
+                            <div class="testimoni-author">
+                                <img src="assets/images/client3.jpg" alt="Klien 3">
+                                <div>
+                                    <h4>Robert Johnson</h4>
+                                    <p>Manajer 123 Digital</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimoni-controls">
+                    <button class="testimoni-prev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="testimoni-dots">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                    <button class="testimoni-next"><i class="fas fa-chevron-right"></i></button>
+                </div>
             </div>
-          </div>
-          <div class="blog-item">
-            <div class="blog-image">
-              <img src="assets/images/blog2.jpg" alt="Artikel 2" />
-              <div class="blog-date">10 Mei 2025</div>
-            </div>
-            <div class="blog-content">
-              <h3><a href="#">Trend Desain UI 2025</a></h3>
-              <p>
-                Prediksi trend desain antarmuka pengguna yang akan dominan di
-                tahun 2025.
-              </p>
-              <a href="#" class="blog-read-more"
-                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-          <div class="blog-item">
-            <div class="blog-image">
-              <img src="assets/images/blog3.jpg" alt="Artikel 3" />
-              <div class="blog-date">25 Apr 2025</div>
-            </div>
-            <div class="blog-content">
-              <h3><a href="#">Memulai dengan React Hooks</a></h3>
-              <p>
-                Panduan lengkap untuk pemula yang ingin mempelajari React Hooks.
-              </p>
-              <a href="#" class="blog-read-more"
-                >Baca Selengkapnya <i class="fas fa-arrow-right"></i
-              ></a>
-            </div>
-          </div>
-        </div>
+        </section>
 
-        <div class="blog-more">
-          <a href="#" class="cta-button">Lihat Semua Artikel</a>
-        </div>
-      </section>
+        <!-- Blog -->
+        <section id="blog" class="section">
+            <div class="section-header">
+                <h2 class="section-title">Artikel <span class="highlight">Terbaru</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Tulisan dan pemikiran terbaru saya</p>
+            </div>
+            
+            <div class="blog-container">
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="assets/images/blog1.jpg" alt="Artikel 1">
+                        <div class="blog-date">15 Jun 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Tips Meningkatkan Kinerja Website</a></h3>
+                        <p>Beberapa teknik praktis untuk mengoptimalkan kecepatan dan kinerja website Anda.</p>
+                        <a href="#" class="blog-read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="assets/images/blog2.jpg" alt="Artikel 2">
+                        <div class="blog-date">10 Mei 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Trend Desain UI 2025</a></h3>
+                        <p>Prediksi trend desain antarmuka pengguna yang akan dominan di tahun 2025.</p>
+                        <a href="#" class="blog-read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="blog-item">
+                    <div class="blog-image">
+                        <img src="assets/images/blog3.jpg" alt="Artikel 3">
+                        <div class="blog-date">25 Apr 2025</div>
+                    </div>
+                    <div class="blog-content">
+                        <h3><a href="#">Memulai dengan React Hooks</a></h3>
+                        <p>Panduan lengkap untuk pemula yang ingin mempelajari React Hooks.</p>
+                        <a href="#" class="blog-read-more">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="blog-more">
+                <a href="#" class="cta-button">Lihat Semua Artikel</a>
+            </div>
+        </section>
 
-      <!-- Kontak -->
-      <section id="kontak" class="section bg-light">
-        <div class="section-header">
-          <h2 class="section-title">
-            Hubungi <span class="highlight">Saya</span>
-          </h2>
-          <div class="section-divider"></div>
-          <p class="section-subtitle">Saya senang mendengar dari Anda</p>
-        </div>
-
-        <div class="kontak-container">
-          <div class="kontak-info">
-            <div class="info-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <div>
-                <h4>Lokasi</h4>
-                <p>Kota, Negara</p>
-              </div>
+        <!-- Kontak -->
+        <section id="kontak" class="section bg-light">
+            <div class="section-header">
+                <h2 class="section-title">Hubungi <span class="highlight">Saya</span></h2>
+                <div class="section-divider"></div>
+                <p class="section-subtitle">Saya senang mendengar dari Anda</p>
             </div>
-            <div class="info-item">
-              <i class="fas fa-envelope"></i>
-              <div>
-                <h4>Email</h4>
-                <p>email@contoh.com</p>
-              </div>
+            
+            <div class="kontak-container">
+                <div class="kontak-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Lokasi</h4>
+                            <p>Kota, Negara</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>email@contoh.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 123 4567 890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Jam Kerja</h4>
+                            <p>Senin - Jumat: 9AM - 5PM</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="kontak-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="nama" placeholder="Nama Anda" required>
+                            <input type="email" id="email" placeholder="Email Anda" required>
+                        </div>
+                        <input type="text" id="subjek" placeholder="Subjek" required>
+                        <textarea id="pesan" placeholder="Pesan Anda" rows="5" required></textarea>
+                        <button type="submit" class="cta-button">Kirim Pesan <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                    <div id="form-message"></div>
+                </div>
             </div>
-            <div class="info-item">
-              <i class="fas fa-phone"></i>
-              <div>
-                <h4>Telepon</h4>
-                <p>+62 123 4567 890</p>
-              </div>
-            </div>
-            <div class="info-item">
-              <i class="fas fa-clock"></i>
-              <div>
-                <h4>Jam Kerja</h4>
-                <p>Senin - Jumat: 9AM - 5PM</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="kontak-form">
-            <form id="contactForm">
-              <div class="form-group">
-                <input type="text" id="nama" placeholder="Nama Anda" required />
-                <input
-                  type="email"
-                  id="email"
-                  placeholder="Email Anda"
-                  required
-                />
-              </div>
-              <input type="text" id="subjek" placeholder="Subjek" required />
-              <textarea
-                id="pesan"
-                placeholder="Pesan Anda"
-                rows="5"
-                required
-              ></textarea>
-              <button type="submit" class="cta-button">
-                Kirim Pesan <i class="fas fa-paper-plane"></i>
-              </button>
-            </form>
-            <div id="form-message"></div>
-          </div>
-        </div>
-      </section>
+        </section>
     </main>
 
     <!-- Footer -->
     <footer>
-      <div class="footer-content">
-        <div class="footer-about">
-          <h3>Tentang Saya</h3>
-          <p>
-            Seorang profesional di bidang [bidang Anda] yang berdedikasi untuk
-            menciptakan solusi digital yang inovatif dan berdampak.
-          </p>
-          <div class="footer-social">
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
-          </div>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Tentang Saya</h3>
+                <p>Seorang profesional di bidang [bidang Anda] yang berdedikasi untuk menciptakan solusi digital yang inovatif dan berdampak.</p>
+                <div class="footer-social">
+                    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#" target="_blank"><i class="fab fa-dribbble"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Tautan Cepat</h3>
+                <ul>
+                    <li><a href="#tentang-saya"><i class="fas fa-chevron-right"></i> Tentang Saya</a></li>
+                    <li><a href="#portofolio"><i class="fas fa-chevron-right"></i> Portofolio</a></li>
+                    <li><a href="#keahlian"><i class="fas fa-chevron-right"></i> Keahlian</a></li>
+                    <li><a href="#testimoni"><i class="fas fa-chevron-right"></i> Testimoni</a></li>
+                    <li><a href="#kontak"><i class="fas fa-chevron-right"></i> Kontak</a></li>
+                </ul>
+            </div>
+            <div class="footer-newsletter">
+                <h3>Newsletter</h3>
+                <p>Berlangganan untuk mendapatkan update terbaru dan artikel eksklusif.</p>
+                <form id="newsletterForm">
+                    <input type="email" placeholder="Email Anda" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
         </div>
-        <div class="footer-links">
-          <h3>Tautan Cepat</h3>
-          <ul>
-            <li>
-              <a href="#tentang-saya"
-                ><i class="fas fa-chevron-right"></i> Tentang Saya</a
-              >
-            </li>
-            <li>
-              <a href="#portofolio"
-                ><i class="fas fa-chevron-right"></i> Portofolio</a
-              >
-            </li>
-            <li>
-              <a href="#keahlian"
-                ><i class="fas fa-chevron-right"></i> Keahlian</a
-              >
-            </li>
-            <li>
-              <a href="#testimoni"
-                ><i class="fas fa-chevron-right"></i> Testimoni</a
-              >
-            </li>
-            <li>
-              <a href="#kontak"><i class="fas fa-chevron-right"></i> Kontak</a>
-            </li>
-          </ul>
+        <div class="footer-bottom">
+            <p>&copy; 2025 <span>[Nama Anda]</span>. All Rights Reserved.</p>
         </div>
-        <div class="footer-newsletter">
-          <h3>Newsletter</h3>
-          <p>
-            Berlangganan untuk mendapatkan update terbaru dan artikel eksklusif.
-          </p>
-          <form id="newsletterForm">
-            <input type="email" placeholder="Email Anda" required />
-            <button type="submit"><i class="fas fa-paper-plane"></i></button>
-          </form>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2025 <span>[Nama Anda]</span>. All Rights Reserved.</p>
-      </div>
     </footer>
 
     <!-- Modal -->
     <div id="portfolioModal" class="modal">
-      <div class="modal-content">
-        <span class="modal-close">&times;</span>
-        <img id="modalImage" src="" alt="" />
-        <div class="modal-info">
-          <h3 id="modalTitle"></h3>
-          <p id="modalDescription"></p>
-          <div class="modal-links">
-            <a href="#" id="modalLiveLink" target="_blank"
-              ><i class="fas fa-external-link-alt"></i> Lihat Live</a
-            >
-            <a href="#" id="modalCodeLink" target="_blank"
-              ><i class="fab fa-github"></i> Kode Sumber</a
-            >
-          </div>
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div class="modal-links">
+                    <a href="#" id="modalLiveLink" target="_blank"><i class="fas fa-external-link-alt"></i> Lihat Live</a>
+                    <a href="#" id="modalCodeLink" target="_blank"><i class="fab fa-github"></i> Kode Sumber</a>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <script src="js/script.js"></script>
-  </body>
+</body>
 </html>
