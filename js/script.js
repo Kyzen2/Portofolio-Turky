@@ -123,7 +123,7 @@ window.addEventListener('scroll', function() {
 
 // Typing Effect
 const typingText = document.getElementById('typing');
-const professions = ['Web Developer', 'UI/UX Designer', 'Freelancer', 'Programmer'];
+const professions = ['Web Developer', 'UI/UX Designer', 'Programmer', 'Frontend Developer'];
 let professionIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
@@ -358,3 +358,4 @@ window.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.hero-content').classList.add('animate__animated', 'animate__fadeInLeft');
     document.querySelector('.hero-image').classList.add('animate__animated', 'animate__fadeInRight');
 });
+
