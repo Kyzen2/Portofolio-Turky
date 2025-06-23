@@ -55,28 +55,56 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Burger Menu
-const navSlide = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-links');
-    const navLinks = document.querySelectorAll('.nav-links li');
+// Burger Menu dan Navigasi Mobile
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Toggle menu
+burger.addEventListener('click', () => {
+    nav.classList.toggle('active');
     
-    burger.addEventListener('click', () => {
-        // Toggle nav
-        nav.classList.toggle('nav-active');
-        
-        // Animate Links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
-            }
-        });
-        
-        // Burger Animation
-        burger.classList.toggle('toggle');
+    // Burger animation
+    burger.classList.toggle('toggle');
+});
+
+// Tutup menu setelah diklik dan scroll ke bagian
+navLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        // Hanya untuk mobile
+        if (window.innerWidth <= 768) {
+            e.preventDefault();
+            
+            const targetId = link.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            // Tutup menu
+            nav.classList.remove('active');
+            burger.classList.remove('toggle');
+            
+            // Scroll ke bagian setelah menu ditutup
+            setTimeout(() => {
+                if (targetSection) {
+                    const headerHeight = document.querySelector('header').offsetHeight;
+                    const sectionPosition = targetSection.offsetTop - headerHeight;
+                    
+                    window.scrollTo({
+                        top: sectionPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            }, 300); // Delay untuk animasi menu menutup
+        }
     });
-}
+});
+
+// Pastikan menu ditutup saat resize ke ukuran desktop
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) {
+        nav.classList.remove('active');
+        burger.classList.remove('toggle');
+    }
+});
 
 navSlide();
 
