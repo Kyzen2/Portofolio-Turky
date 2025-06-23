@@ -55,55 +55,58 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Burger Menu
-// Burger Menu dan Navigasi Mobile
-const burger = document.querySelector('.burger');
-const nav = document.querySelector('.nav-links');
-const navLinks = document.querySelectorAll('.nav-link');
-
-// Toggle menu
-burger.addEventListener('click', () => {
-    nav.classList.toggle('active');
+const navSlide = () => {
+    const burger = document.querySelector('.burger');
+    const nav = document.querySelector('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links li');
     
-    // Burger animation
-    burger.classList.toggle('toggle');
-});
-
-// Tutup menu setelah diklik dan scroll ke bagian
-navLinks.forEach(link => {
-    link.addEventListener('click', (e) => {
-        // Hanya untuk mobile
-        if (window.innerWidth <= 768) {
-            e.preventDefault();
-            
-            const targetId = link.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            // Tutup menu
-            nav.classList.remove('active');
-            burger.classList.remove('toggle');
-            
-            // Scroll ke bagian setelah menu ditutup
-            setTimeout(() => {
-                if (targetSection) {
-                    const headerHeight = document.querySelector('header').offsetHeight;
-                    const sectionPosition = targetSection.offsetTop - headerHeight;
-                    
-                    window.scrollTo({
-                        top: sectionPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            }, 300); // Delay untuk animasi menu menutup
-        }
+    burger.addEventListener('click', () => {
+        // Toggle nav
+        nav.classList.toggle('nav-active');
+        
+        // Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = '';
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.3}s`;
+            }
+        });
+        
+        // Burger Animation
+        burger.classList.toggle('toggle');
     });
+    
+}
+
+// Burger Menu Functionality
+const burger = document.querySelector('.burger');
+const navLinks = document.querySelector('.nav-links');
+const navItems = document.querySelectorAll('.nav-links li');
+
+burger.addEventListener('click', () => {
+    // Toggle nav
+    navLinks.classList.toggle('active');
+    burger.classList.toggle('active');
+    
+    // Animate links
+    if (navLinks.classList.contains('active')) {
+        navLinks.classList.add('nav-active');
+    } else {
+        navLinks.classList.remove('nav-active');
+        navItems.forEach(item => {
+            item.style.animation = '';
+        });
+    }
 });
 
-// Pastikan menu ditutup saat resize ke ukuran desktop
-window.addEventListener('resize', () => {
-    if (window.innerWidth > 768) {
-        nav.classList.remove('active');
-        burger.classList.remove('toggle');
-    }
+// Close menu when clicking on a link
+navItems.forEach(item => {
+    item.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        burger.classList.remove('active');
+        navLinks.classList.remove('nav-active');
+    });
 });
 
 navSlide();
